@@ -1,0 +1,10 @@
+---
+# Exercise for setting up a web server in an EC
+- name: Exercise for setting up a web server in an EC
+  # For Amazon LInux 2 instance, the user will be `ec2-user`
+  # Use the public IP if the VM is already created
+  hosts: all
+  user: ec2-user
+  become: true
+  roles:
+    - setup
